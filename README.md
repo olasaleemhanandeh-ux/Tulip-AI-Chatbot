@@ -8,10 +8,33 @@ A modern AI chatbot built with Flask, Gemini API, and Groq fallback support.
 - Gemini AI Integration
 - Groq Fallback System
 - Conversation Memory
-- Chat Logging
 - Dark / Light Mode
 - Responsive Design
 - Custom AI Personality (Tulip)
+
+## Screenshots
+
+### 🌷 Main Interface (Light Mode)
+
+![Light Mode](screenshots/light-mode.jpeg)
+
+Elegant tulip-inspired interface with a soft pink theme.
+
+---
+
+### 🌙 Dark Mode
+
+![Dark Mode](screenshots/dark-mode.jpeg)
+
+Dark mode designed for a comfortable user experience during long conversations.
+
+---
+
+### 🧠 Conversation Memory
+
+![Memory Demo](screenshots/memory-demo.jpeg)
+
+Tulip remembers information shared during the current session and uses it to provide contextual responses.
 
 ## Project Objective
 
