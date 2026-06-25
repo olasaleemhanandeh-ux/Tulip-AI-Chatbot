@@ -72,6 +72,11 @@ Tulip-AI-Chatbot/
 ├── public/
 │   └── assets
 │
+├── screenshots/
+│   ├── light-mode.jpeg
+│   ├── dark-mode.jpeg
+│   └── memory-demo.jpeg
+│
 └── chat_logs/
 ```
 
