@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff1f4" />
+    <title>Tulip AI Assistant</title>
+    <meta
+      name="description"
+      content="A calm, elegant AI chatbot inspired by tulip flowers."
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Watercolor tulip illustrations in the corners -->
+    <img
+      src="{{ url_for('static', filename='images/tulip-corner.png') }}"
+      alt=""
+      aria-hidden="true"
+      class="corner corner--tl"
+    />
+    <img
+      src="{{ url_for('static', filename='images/tulip-corner.png') }}"
+      alt=""
+      aria-hidden="true"
+      class="corner corner--br"
+    />
+
+    <!-- Floating tulip decorations -->
+    <div class="floating" aria-hidden="true">
+      <svg class="floating__tulip floating__tulip--1" viewBox="0 0 24 24" fill="none">
+        <path d="M12 21c0-4-3-5-3-9a3 3 0 0 1 6 0c0 4-3 5-3 9Z" fill="currentColor" opacity="0.55" />
+        <path d="M12 12c-1.6-2-3-2.2-4.2-1.6C6 11.2 6.4 13.8 8.4 15 10 16 12 15 12 12Z" fill="currentColor" />
+        <path d="M12 12c1.6-2 3-2.2 4.2-1.6C18 11.2 17.6 13.8 15.6 15 14 16 12 15 12 12Z" fill="currentColor" />
+        <path d="M12 12c0-2.2.6-3.6 1.6-4.4C12.8 5.4 12 5 12 5s-.8.4-1.6 2.6C11.4 8.4 12 9.8 12 12Z" fill="currentColor" />
+        <path d="M12 21v-9" stroke="var(--leaf)" stroke-width="1.4" stroke-linecap="round" />
+      </svg>
+      <svg class="floating__tulip floating__tulip--2" viewBox="0 0 24 24" fill="none">
+        <path d="M12 21c0-4-3-5-3-9a3 3 0 0 1 6 0c0 4-3 5-3 9Z" fill="currentColor" opacity="0.55" />
+        <path d="M12 12c-1.6-2-3-2.2-4.2-1.6C6 11.2 6.4 13.8 8.4 15 10 16 12 15 12 12Z" fill="currentColor" />
+        <path d="M12 12c1.6-2 3-2.2 4.2-1.6C18 11.2 17.6 13.8 15.6 15 14 16 12 15 12 12Z" fill="currentColor" />
+        <path d="M12 12c0-2.2.6-3.6 1.6-4.4C12.8 5.4 12 5 12 5s-.8.4-1.6 2.6C11.4 8.4 12 9.8 12 12Z" fill="currentColor" />
+        <path d="M12 21v-9" stroke="var(--leaf)" stroke-width="1.4" stroke-linecap="round" />
+      </svg>
+      <svg class="floating__tulip floating__tulip--3" viewBox="0 0 24 24" fill="none">
+        <path d="M12 21c0-4-3-5-3-9a3 3 0 0 1 6 0c0 4-3 5-3 9Z" fill="currentColor" opacity="0.55" />
+        <path d="M12 12c-1.6-2-3-2.2-4.2-1.6C6 11.2 6.4 13.8 8.4 15 10 16 12 15 12 12Z" fill="currentColor" />
+        <path d="M12 12c1.6-2 3-2.2 4.2-1.6C18 11.2 17.6 13.8 15.6 15 14 16 12 15 12 12Z" fill="currentColor" />
+        <path d="M12 12c0-2.2.6-3.6 1.6-4.4C12.8 5.4 12 5 12 5s-.8.4-1.6 2.6C11.4 8.4 12 9.8 12 12Z" fill="currentColor" />
+        <path d="M12 21v-9" stroke="var(--leaf)" stroke-width="1.4" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <main class="page">
+      <section class="chat glass" aria-label="Tulip AI Assistant chat">
+        <!-- Header -->
+        <header class="chat__header">
+          <span class="chat__avatar" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" class="tulip-icon">
+              <path
+                d="M12 21c0-4-3-5-3-9a3 3 0 0 1 6 0c0 4-3 5-3 9Z"
+                fill="currentColor"
+                opacity="0.55"
+              />
+              <path
+                d="M12 12c-1.6-2-3-2.2-4.2-1.6C6 11.2 6.4 13.8 8.4 15 10 16 12 15 12 12Z"
+                fill="currentColor"
+              />
+              <path
+                d="M12 12c1.6-2 3-2.2 4.2-1.6C18 11.2 17.6 13.8 15.6 15 14 16 12 15 12 12Z"
+                fill="currentColor"
+              />
+              <path
+                d="M12 12c0-2.2.6-3.6 1.6-4.4C12.8 5.4 12 5 12 5s-.8.4-1.6 2.6C11.4 8.4 12 9.8 12 12Z"
+                fill="currentColor"
+              />
+              <path
+                d="M12 21v-9"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                opacity="0.5"
+              />
+            </svg>
+          </span>
+          <div class="chat__title">
+            <h1>Tulip AI Assistant</h1>
+            <p class="chat__status">
+              <span class="chat__dot"></span>
+              Always here, calm &amp; ready
+            </p>
+          </div>
+          <button
+            type="button"
+            id="theme-toggle"
+            class="icon-btn"
+            aria-label="Switch to dark mode"
+          >
+            <svg
+              class="icon icon--moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+            <svg
+              class="icon icon--sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41"
+              />
+            </svg>
+          </button>
+        </header>
+
+        <!-- Messages -->
+        <div class="chat__messages" id="messages" role="log" aria-live="polite">
+          <!-- messages injected by script.js -->
+        </div>
+
+        <!-- Input -->
+        <form class="chat__form" id="chat-form" autocomplete="off">
+          <input
+            type="text"
+            id="message-input"
+            class="chat__input"
+            placeholder="Write a gentle message…"
+            aria-label="Message"
+          />
+          <button
+            type="submit"
+            id="send-btn"
+            class="send-btn"
+            aria-label="Send message"
+          >
+            <svg
+              class="icon icon--send"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m22 2-7 20-4-9-9-4Z" />
+              <path d="M22 2 11 13" />
+            </svg>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
