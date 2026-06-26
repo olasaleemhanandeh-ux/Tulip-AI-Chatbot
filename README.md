@@ -4,7 +4,6 @@ A modern AI chatbot built with Flask, Gemini API, and Groq fallback support.
 
 ## Features
 
-- Modern ChatGPT-style UI
 - Gemini AI Integration
 - Groq Fallback System
 - Conversation Memory
