@@ -102,7 +102,7 @@ This allows the chatbot to remember previous messages throughout the current ses
 ## Installation
 
 ```bash
-git clone (https://github.com/olasaleemhanandeh-ux/Tulip-AI-Chatbot)
+git clone https://github.com/olasaleemhanandeh-ux/Tulip-AI-Chatbot.git
 cd Tulip-AI-Chatbot
 
 pip install -r requirements.txt
