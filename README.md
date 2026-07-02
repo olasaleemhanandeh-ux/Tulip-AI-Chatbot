@@ -142,3 +142,9 @@ http://127.0.0.1:5000
 **Oula Hanandeh**
 
 Generative AI Intern @ DecodeLabs 
+
+GitHub:
+https://github.com/olasaleemhanandeh-ux
+
+LinkedIn:
+https://www.linkedin.com/in/oula-hanandeh-2b275a299/
